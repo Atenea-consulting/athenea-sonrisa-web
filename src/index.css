@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -35,20 +36,20 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Custom brand colors */
+    --brand-orange: 14 87% 51%;
+    --brand-orange-secondary: 38 92% 50%;
+    --brand-black: 0 0% 9%;
+    --brand-gray: 0 0% 45%;
+    --brand-beige: 36 33% 95%;
   }
 
   .dark {
@@ -97,5 +98,63 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
   }
+}
+
+@layer utilities {
+  .text-brand-orange {
+    color: hsl(var(--brand-orange));
+  }
+  
+  .bg-brand-orange {
+    background-color: hsl(var(--brand-orange));
+  }
+  
+  .text-brand-orange-secondary {
+    color: hsl(var(--brand-orange-secondary));
+  }
+  
+  .bg-brand-orange-secondary {
+    background-color: hsl(var(--brand-orange-secondary));
+  }
+  
+  .text-brand-black {
+    color: hsl(var(--brand-black));
+  }
+  
+  .bg-brand-black {
+    background-color: hsl(var(--brand-black));
+  }
+  
+  .text-brand-gray {
+    color: hsl(var(--brand-gray));
+  }
+  
+  .bg-brand-gray {
+    background-color: hsl(var(--brand-gray));
+  }
+  
+  .bg-brand-beige {
+    background-color: hsl(var(--brand-beige));
+  }
+}
+
+/* Animaciones sutiles */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(224, 74, 28, 0.3); }
+  50% { box-shadow: 0 0 30px rgba(224, 74, 28, 0.5); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow 3s ease-in-out infinite;
 }
