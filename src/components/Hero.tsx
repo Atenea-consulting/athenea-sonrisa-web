@@ -13,11 +13,11 @@ const Hero = () => {
       <div className="absolute top-20 right-20 w-72 h-72 bg-brand-orange rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float"></div>
       <div className="absolute bottom-20 left-20 w-96 h-96 bg-brand-orange-secondary rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float delay-1000"></div>
       
-      {/* Professional image overlay */}
+      {/* Professional image overlays with new photos */}
       <div className="absolute top-1/4 right-10 hidden lg:block">
         <div className="w-48 h-64 rounded-2xl overflow-hidden shadow-2xl opacity-30 transform rotate-12">
           <img 
-            src="/lovable-uploads/cf26bf9f-5d6a-4697-b4f6-7210cb82de09.png" 
+            src="/lovable-uploads/8cbe58fc-3c1b-461b-9159-c08af0bd79b5.png" 
             alt="Professional consulting" 
             className="w-full h-full object-cover filter grayscale"
           />
@@ -27,7 +27,7 @@ const Hero = () => {
       <div className="absolute bottom-1/4 left-10 hidden lg:block">
         <div className="w-40 h-52 rounded-2xl overflow-hidden shadow-2xl opacity-25 transform -rotate-6">
           <img 
-            src="/lovable-uploads/b3f8f963-6b9e-4f5b-9e8f-0e462e2b723b.png" 
+            src="/lovable-uploads/95e9b0f4-458f-486b-a730-ad482810a892.png" 
             alt="Business professional" 
             className="w-full h-full object-cover filter grayscale"
           />

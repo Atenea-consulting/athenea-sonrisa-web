@@ -29,10 +29,31 @@ const About = () => {
   ];
 
   return (
-    <section id="nosotros" className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="nosotros" className="py-20 bg-white relative overflow-hidden">
+      {/* Background image elements */}
+      <div className="absolute top-20 right-10 hidden lg:block opacity-10">
+        <div className="w-32 h-40 rounded-2xl overflow-hidden transform rotate-12">
+          <img 
+            src="/lovable-uploads/8cbe58fc-3c1b-461b-9159-c08af0bd79b5.png" 
+            alt="Professional background" 
+            className="w-full h-full object-cover filter grayscale"
+          />
+        </div>
+      </div>
+      
+      <div className="absolute bottom-20 left-10 hidden lg:block opacity-8">
+        <div className="w-28 h-36 rounded-2xl overflow-hidden transform -rotate-6">
+          <img 
+            src="/lovable-uploads/95e9b0f4-458f-486b-a730-ad482810a892.png" 
+            alt="Business professional background" 
+            className="w-full h-full object-cover filter grayscale"
+          />
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-brand-black mb-6">
+          <h2 className="text-4xl md:text-5xl font-elegant font-bold text-brand-black mb-6">
             {t('about.title')}
           </h2>
         </div>
@@ -46,10 +67,10 @@ const About = () => {
               <div className="flex items-center justify-center mb-6">
                 <Target className="h-16 w-16 text-white" />
               </div>
-              <h3 className="text-3xl md:text-4xl font-bold text-center mb-6">
+              <h3 className="text-3xl md:text-4xl font-elegant font-bold text-center mb-6">
                 {t('about.objectives.title')}
               </h3>
-              <p className="text-lg md:text-xl text-center leading-relaxed max-w-4xl mx-auto text-white/90">
+              <p className="text-lg md:text-xl text-center leading-relaxed max-w-4xl mx-auto text-white/90 font-body">
                 {t('about.objectives.desc')}
               </p>
             </div>
@@ -58,7 +79,7 @@ const About = () => {
 
         {/* Nuestros Valores */}
         <div className="mb-20">
-          <h3 className="text-3xl md:text-4xl font-bold text-brand-black text-center mb-12">
+          <h3 className="text-3xl md:text-4xl font-elegant font-bold text-brand-black text-center mb-12">
             <span className="bg-gradient-to-r from-brand-orange to-brand-orange-secondary bg-clip-text text-transparent">
               {t('about.values.title')}
             </span>
@@ -72,10 +93,10 @@ const About = () => {
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-white rounded-full shadow-lg mb-4 group-hover:scale-110 transition-transform duration-300">
                   <value.icon className="h-8 w-8 text-brand-orange" />
                 </div>
-                <h4 className="text-xl font-bold text-brand-black mb-3">
+                <h4 className="text-xl font-elegant font-bold text-brand-black mb-3">
                   {value.title}
                 </h4>
-                <p className="text-brand-gray text-sm leading-relaxed">
+                <p className="text-brand-gray text-sm leading-relaxed font-body">
                   {value.description}
                 </p>
               </div>
@@ -89,10 +110,10 @@ const About = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-brand-orange/20 to-brand-orange-secondary/20 rounded-3xl transform rotate-3"></div>
             <div className="relative bg-white rounded-3xl p-8 shadow-xl">
               <Users className="h-16 w-16 text-brand-orange mb-6" />
-              <h3 className="text-3xl md:text-4xl font-bold text-brand-black mb-6">
+              <h3 className="text-3xl md:text-4xl font-elegant font-bold text-brand-black mb-6">
                 {t('about.who.title')}
               </h3>
-              <p className="text-lg text-brand-gray leading-relaxed">
+              <p className="text-lg text-brand-gray leading-relaxed font-body">
                 {t('about.who.desc')}
               </p>
             </div>
@@ -100,20 +121,20 @@ const About = () => {
           
           <div className="grid grid-cols-2 gap-6">
             <div className="bg-brand-beige rounded-2xl p-6 text-center">
-              <div className="text-3xl font-bold text-brand-orange mb-2">15+</div>
-              <div className="text-brand-gray text-sm">Años de Experiencia</div>
+              <div className="text-3xl font-elegant font-bold text-brand-orange mb-2">15+</div>
+              <div className="text-brand-gray text-sm font-body">Años de Experiencia</div>
             </div>
             <div className="bg-brand-beige rounded-2xl p-6 text-center">
-              <div className="text-3xl font-bold text-brand-orange mb-2">50+</div>
-              <div className="text-brand-gray text-sm">Proyectos Exitosos</div>
+              <div className="text-3xl font-elegant font-bold text-brand-orange mb-2">50+</div>
+              <div className="text-brand-gray text-sm font-body">Proyectos Exitosos</div>
             </div>
             <div className="bg-brand-beige rounded-2xl p-6 text-center">
-              <div className="text-3xl font-bold text-brand-orange mb-2">25+</div>
-              <div className="text-brand-gray text-sm">Industrias</div>
+              <div className="text-3xl font-elegant font-bold text-brand-orange mb-2">25+</div>
+              <div className="text-brand-gray text-sm font-body">Industrias</div>
             </div>
             <div className="bg-brand-beige rounded-2xl p-6 text-center">
-              <div className="text-3xl font-bold text-brand-orange mb-2">98%</div>
-              <div className="text-brand-gray text-sm">Satisfacción</div>
+              <div className="text-3xl font-elegant font-bold text-brand-orange mb-2">98%</div>
+              <div className="text-brand-gray text-sm font-body">Satisfacción</div>
             </div>
           </div>
         </div>

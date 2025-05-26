@@ -13,8 +13,7 @@ const Trends = () => {
       title: 'El Futuro del Procurement Digital',
       excerpt: 'Cómo la transformación digital está revolucionando las estrategias de compras y la gestión de proveedores en 2024.',
       date: '15 Nov 2024',
-      readTime: '5 min',
-      image: '/lovable-uploads/4beac185-aa8a-4718-ba6a-2193e9e7a16b.png'
+      readTime: '5 min'
     },
     {
       category: 'Sales Strategy',
@@ -22,8 +21,7 @@ const Trends = () => {
       title: 'Estrategias de Ventas B2B Innovadoras',
       excerpt: 'Las metodologías más efectivas para acelerar el crecimiento comercial en mercados competitivos.',
       date: '12 Nov 2024',
-      readTime: '7 min',
-      image: '/lovable-uploads/0a45f61e-ff64-416f-91fa-9fb162d33c62.png'
+      readTime: '7 min'
     },
     {
       category: 'Digital Transformation',
@@ -31,8 +29,7 @@ const Trends = () => {
       title: 'ROI en Transformación Digital',
       excerpt: 'Métricas clave para medir el retorno de inversión en proyectos de transformación empresarial.',
       date: '08 Nov 2024',
-      readTime: '6 min',
-      image: '/lovable-uploads/a969ea91-c7a1-4c3e-bd5e-132f5f77f0f2.png'
+      readTime: '6 min'
     }
   ];
 
@@ -56,12 +53,8 @@ const Trends = () => {
               key={index}
               className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-gray-100"
             >
-              <div className="relative overflow-hidden">
-                <img 
-                  src={post.image} 
-                  alt={post.title}
-                  className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300 filter grayscale group-hover:grayscale-0"
-                />
+              <div className="relative overflow-hidden bg-gradient-to-br from-brand-orange/10 to-brand-orange-secondary/10 h-48 flex items-center justify-center">
+                <post.icon className="h-16 w-16 text-brand-orange group-hover:scale-110 transition-transform duration-300" />
                 <div className="absolute top-4 left-4">
                   <div className="flex items-center space-x-2 bg-white/90 backdrop-blur-sm rounded-full px-3 py-1">
                     <post.icon className="h-4 w-4 text-brand-orange" />
@@ -103,14 +96,6 @@ const Trends = () => {
         {/* Call to Action */}
         <div className="text-center">
           <div className="bg-gradient-to-r from-brand-orange to-brand-orange-secondary rounded-2xl p-8 text-white relative overflow-hidden">
-            {/* Background image overlay */}
-            <div className="absolute inset-0 opacity-10">
-              <img 
-                src="/lovable-uploads/e5ad0511-941b-46e9-ae53-16546bafd749.png" 
-                alt="Professional background" 
-                className="w-full h-full object-cover"
-              />
-            </div>
             <div className="relative z-10">
               <h3 className="text-2xl font-elegant font-bold mb-4">¿Quiere estar al día con las últimas tendencias?</h3>
               <p className="text-white/90 mb-6 max-w-2xl mx-auto font-body">

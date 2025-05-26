@@ -98,11 +98,11 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-family: 'Aileron', system-ui, -apple-system, sans-serif;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Now', serif;
     font-weight: 600;
     letter-spacing: -0.025em;
   }
@@ -146,11 +146,11 @@
   }
 
   .font-elegant {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Now', serif;
   }
 
   .font-body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Aileron', sans-serif;
   }
 }
 
