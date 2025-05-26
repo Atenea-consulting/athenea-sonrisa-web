@@ -21,7 +21,7 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="text-2xl font-bold">
+            <div className="text-2xl font-elegant font-bold">
               <span className="text-brand-black">Athenea</span>
               <span className="text-brand-orange"> Consulting</span>
             </div>
@@ -33,7 +33,7 @@ const Header = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-brand-black hover:text-brand-orange font-medium transition-all duration-300 hover:scale-105 transform relative group"
+                className="text-brand-black hover:text-brand-orange font-medium font-body transition-all duration-300 hover:scale-105 transform relative group"
               >
                 {item.name}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-orange transition-all duration-300 group-hover:w-full"></span>
@@ -47,7 +47,7 @@ const Header = () => {
             <div className="relative">
               <button
                 onClick={() => setLanguage(language === 'es' ? 'en' : 'es')}
-                className="flex items-center space-x-2 text-brand-black hover:text-brand-orange transition-colors duration-300"
+                className="flex items-center space-x-2 text-brand-black hover:text-brand-orange transition-colors duration-300 font-body"
               >
                 <Globe size={18} />
                 <span className="text-sm font-medium uppercase">{language}</span>
@@ -74,7 +74,7 @@ const Header = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-brand-black hover:text-brand-orange font-medium transition-colors duration-300 py-2"
+                  className="text-brand-black hover:text-brand-orange font-medium font-body transition-colors duration-300 py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
