@@ -83,17 +83,52 @@
 	.message-en {
       font-size: 1.5rem;
     }
-
-    @media (max-width: 768px) {
-      .title { font-size: 2.8rem; }
-      .subtitle { font-size: 2rem; }
-      .logo { font-size: 2rem; }
-      .message-es,
-      .message-en { font-size: 1.2rem; }
+	
+    .qr-code {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      color: black;
+      z-index: 3;
+      padding: 0.5rem;
+      background-color: white;
+      border-radius: .5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+	  transition: background-color 0.5s;   
+	}
+	
+	.qr-code:hover {
+      background-color: black;
+	  color: white;
+	  cursor: pointer;
+    }
+    
+    .qr-code img{
+      width: 5rem;
+    }
+    
+    a,
+    a:visited,
+    a:hover,
+    a:active,
+    a:focus {
+      text-decoration: none;
+      color: inherit;
+      outline: none;
+    }
+	
+	@media (orientation: portrait) {
+	  .qr-code img{ width: 10rem; }
     }
   </style>
 </head>
 <body>
+  <div class="qr-code">
+	<a href="mailto:info@atheneaconsulting.com?subject=From%20Web%20Site%20-%20"/>
+	  <img src="img/qrcode-email.png" alt="Contattaci via email" /><br>
+	  Contact us
+	</a>
+  </div>
   <div class="center-wrapper">
     <div class="logo">
       <span class="variant-1">ATHENEA</span> CONSULTING
